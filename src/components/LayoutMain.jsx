@@ -12,7 +12,8 @@ function LayoutMain(props) {
   return (
     <div className='bg-blue-900 flex flex-col min-h-screen w-full'>
     <header className='flex flex-col items-center py-2 gap-2'>
-        <h1 className='text-slate-300 grow font-custom text-xl md:text-5xl lg:text-6xl'>Casco Electronics</h1>
+        <p className='text-slate-300 grow font-custom text-xl md:text-5xl lg:text-6xl'>Casco</p>
+        <p className='text-slate-300 grow font-custom text-xl md:text-5xl lg:text-6xl'>electronics</p>
         <nav className='flex gap-2 text-slate-300'>
             {paths.map((path) => <Anchor key={path.nombre} to={path.path} className={path.estado ? " p-1 text-sm rounded-lg bg-white text-black md:text-xl lg:text-2xl" : "bg-blue-950 p-1 text-sm rounded-lg hover:bg-white hover:text-black md:text-xl lg:text-2xl"}>{path.nombre}</Anchor>)}
         </nav>
@@ -35,3 +36,6 @@ function LayoutMain(props) {
 }
 
 export default LayoutMain
+
+
+//Acomodr titulo de casco electronics 
